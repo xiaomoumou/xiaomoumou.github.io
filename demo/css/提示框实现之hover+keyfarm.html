@@ -1,0 +1,49 @@
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style type="text/css">
+    .box {
+      width: 100px;
+      height: 50px;
+      border: saddlebrown 1px solid;
+      text-align: center;
+      line-height: 50px;
+      position: relative;
+      transition: .3s;
+      cursor: pointer;
+    }
+
+    .box div {
+      width: 100px;
+      height: 50px;
+      background-color: #2E33A5;
+      position: absolute;
+      top: 50px;
+      left: 0px;
+      display: none;
+    }
+
+    .box:hover div {
+      display: block;
+      animation: anBox 1s;
+    }
+
+    @keyframes anBox {
+      from {
+        opacity: 0;
+        top: 0px;
+      }
+      to {
+        opacity: 1;
+        top: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    悬浮
+    <div>我出来了</div>
+  </div>
+</body>

@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/*公共样式文件default.scss中*/
+/*九个模块九种颜色数组*/
+.item01 {
+  background-image: url("../assets/sicon1.png"), linear-gradient(130deg, #066efc, #9dc6fe); }
+
+.item02 {
+  background-image: url("../assets/sicon2.png"), linear-gradient(130deg, #05cccc, #6ffbfb); }
+
+.item03 {
+  background-image: url("../assets/sicon3.png"), linear-gradient(130deg, #fb6502, #fec198); }
+
+.item04 {
+  background-image: url("../assets/sicon4.png"), linear-gradient(130deg, #199a01, #56fe36); }
+
+.item05 {
+  background-image: url("../assets/sicon5.png"), linear-gradient(130deg, #076ffd, #9fc7fe); }
+
+.item06 {
+  background-image: url("../assets/sicon6.png"), linear-gradient(130deg, #fb6502, #fec198); }
+
+.item07 {
+  background-image: url("../assets/sicon7.png"), linear-gradient(130deg, #016ac1, #5db5fe); }
+
+.item08 {
+  background-image: url("../assets/sicon8.png"), linear-gradient(130deg, #04cccd, #6efbfc); }
+
+.item09 {
+  background-image: url("../assets/sicon9.png"), linear-gradient(130deg, #076ffd, #9fc7fe); }
+
+p:nth-child(1) {
+  color: #066efc; }
+
+p:nth-child(2) {
+  color: #05cccc; }
+
+p:nth-child(3) {
+  color: #fb6502; }
+
+p:nth-child(4) {
+  color: #199a01; }
+
+p:nth-child(5) {
+  color: #076ffd; }
+
+p:nth-child(6) {
+  color: #fb6502; }
+
+p:nth-child(7) {
+  color: #016ac1; }

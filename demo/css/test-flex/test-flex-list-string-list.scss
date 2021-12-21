@@ -1,0 +1,18 @@
+$flex-wrap: nowrap  wrap  wrap-reverse;
+$align-items: flex-start  flex-end  center  baseline  stretch;
+$justify-content: flex-start  flex-end  center  space-between  space-around;
+$align-content: flex-start  flex-end  center  space-between  space-around  stretch;
+$align-self: auto  flex-start  flex-end  center  baseline  stretch;
+
+$flex: flex-wrap align-items justify-content align-content align-self;
+
+// 暂时未找到解决方法
+// 编译后的字符串拼接为变量，该变量未生效
+@each $flex-item in $flex{
+  p{
+    font-family:#{'$'+$flex-item};
+    font-family:$flex;
+    font-family:$flex-wrap
+  }
+ 
+}

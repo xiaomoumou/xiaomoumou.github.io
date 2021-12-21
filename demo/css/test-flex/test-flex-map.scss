@@ -1,0 +1,25 @@
+// $flex-wrap: ("flex-wrap":"nowrap"  "wrap"  "wrap-reverse");
+// $align-items: ("align-items":"flex-start"  "flex-end"  "center"  "baseline"  "stretch");
+// $justify-content: ("justify-content":"flex-start"  "flex-end"  "center"  "space-between"  "space-around");
+// $align-content: ("align-content":"flex-start"  "flex-end"  "center"  "space-between"  "space-around"  "stretch");
+// $align-self: ("align-self":"auto"  "flex-start"  "flex-end"  "center"  "baseline"  "stretch");
+
+
+
+$flex-wrap: (flex-wrap:nowrap  wrap  wrap-reverse);
+$align-items: (align-items:flex-start  flex-end  center  baseline  stretch);
+$justify-content: (justify-content:flex-start  flex-end  center  space-between  space-around);
+$align-content: (align-content:flex-start  flex-end  center  space-between  space-around  stretch);
+$align-self: (align-self:auto  flex-start  flex-end  center  baseline  stretch);
+
+$flex:$flex-wrap $align-items $justify-content $align-content $align-self;
+
+@each $item in $flex{
+  @each $key in map-keys($item) {
+    @each $value in map-get($item,$key) {
+      .#{$key+'-'+$value}{
+        #{$key}:$value
+      }
+    }
+  }
+}

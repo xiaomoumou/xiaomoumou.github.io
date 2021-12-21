@@ -1,0 +1,29 @@
+p {
+  font-family: $flex-wrap;
+  font-family: flex-wrap align-items justify-content align-content align-self;
+  font-family: nowrap wrap wrap-reverse;
+}
+
+p {
+  font-family: $align-items;
+  font-family: flex-wrap align-items justify-content align-content align-self;
+  font-family: nowrap wrap wrap-reverse;
+}
+
+p {
+  font-family: $justify-content;
+  font-family: flex-wrap align-items justify-content align-content align-self;
+  font-family: nowrap wrap wrap-reverse;
+}
+
+p {
+  font-family: $align-content;
+  font-family: flex-wrap align-items justify-content align-content align-self;
+  font-family: nowrap wrap wrap-reverse;
+}
+
+p {
+  font-family: $align-self;
+  font-family: flex-wrap align-items justify-content align-content align-self;
+  font-family: nowrap wrap wrap-reverse;
+}

@@ -1,0 +1,21 @@
+/*公共样式文件default.scss中*/
+$colors01: #066efc;
+$colors02: #05cccc;
+$colors03: #fb6502;
+$colors04: #199a01;
+$colors05: #076ffd;
+$colors06: #fb6502;
+$colors07: #016ac1;
+$colors08: #04cccd;
+$colors09: #076ffd;
+$colors: $colors01 $colors02 $colors03 $colors04 $colors05 $colors06 $colors07 $colors08 $colors09; /*九个模块九种颜色数组*/
+
+$colors02: $colors01 $colors02 $colors03 $colors04 $colors05 $colors06 $colors07;
+
+@for $i from 1 through length($colors02) {
+  $item: nth($colors02, $i);
+  p:nth-child(#{$i}){
+    color: $item;
+    background: lighten($cl, 30%);
+  }
+}
