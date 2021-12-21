@@ -1,0 +1,124 @@
+p {
+  font-family: nowrap;
+  font-family: nowrap wrap wrap-reverse;
+}
+
+p {
+  font-family: wrap;
+  font-family: nowrap wrap wrap-reverse;
+}
+
+p {
+  font-family: wrap-reverse;
+  font-family: nowrap wrap wrap-reverse;
+}
+
+p {
+  font-family: flex-start;
+  font-family: flex-start flex-end center baseline stretch;
+}
+
+p {
+  font-family: flex-end;
+  font-family: flex-start flex-end center baseline stretch;
+}
+
+p {
+  font-family: center;
+  font-family: flex-start flex-end center baseline stretch;
+}
+
+p {
+  font-family: baseline;
+  font-family: flex-start flex-end center baseline stretch;
+}
+
+p {
+  font-family: stretch;
+  font-family: flex-start flex-end center baseline stretch;
+}
+
+p {
+  font-family: flex-start;
+  font-family: flex-start flex-end center space-between space-around;
+}
+
+p {
+  font-family: flex-end;
+  font-family: flex-start flex-end center space-between space-around;
+}
+
+p {
+  font-family: center;
+  font-family: flex-start flex-end center space-between space-around;
+}
+
+p {
+  font-family: space-between;
+  font-family: flex-start flex-end center space-between space-around;
+}
+
+p {
+  font-family: space-around;
+  font-family: flex-start flex-end center space-between space-around;
+}
+
+p {
+  font-family: flex-start;
+  font-family: flex-start flex-end center space-between space-around stretch;
+}
+
+p {
+  font-family: flex-end;
+  font-family: flex-start flex-end center space-between space-around stretch;
+}
+
+p {
+  font-family: center;
+  font-family: flex-start flex-end center space-between space-around stretch;
+}
+
+p {
+  font-family: space-between;
+  font-family: flex-start flex-end center space-between space-around stretch;
+}
+
+p {
+  font-family: space-around;
+  font-family: flex-start flex-end center space-between space-around stretch;
+}
+
+p {
+  font-family: stretch;
+  font-family: flex-start flex-end center space-between space-around stretch;
+}
+
+p {
+  font-family: auto;
+  font-family: auto flex-start flex-end center baseline stretch;
+}
+
+p {
+  font-family: flex-start;
+  font-family: auto flex-start flex-end center baseline stretch;
+}
+
+p {
+  font-family: flex-end;
+  font-family: auto flex-start flex-end center baseline stretch;
+}
+
+p {
+  font-family: center;
+  font-family: auto flex-start flex-end center baseline stretch;
+}
+
+p {
+  font-family: baseline;
+  font-family: auto flex-start flex-end center baseline stretch;
+}
+
+p {
+  font-family: stretch;
+  font-family: auto flex-start flex-end center baseline stretch;
+}

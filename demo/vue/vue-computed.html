@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue 测试实例 - computed</title>
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+<style>
+  .warp{
+    margin: 20px;padding: 10px;
+    box-shadow: 0 0 8px 0 rgb(232 237 250 / 60%), 0 2px 4px 0 rgb(232 237 250 / 50%);
+
+  }
+  .item{
+    display: inline-block;margin-right: 20px;cursor: pointer;color:#fff;background-color: #409eff;border-radius: 10px;padding:10px
+  }
+</style>
+<body>
+  <div id="app">
+    <div v-for="(item,index) in flexBoxs" :key="index" class="warp">
+      {{`${item.id}：${activeClass[item.id]}`}}
+      <div>
+        <p @click="changeClass(item,attr)" v-for="(attr,attrIndex) in item.values" :key="attrIndex" class="item">
+          {{attr}}
+        </p>
+      </div>
+    </div>
+    
+    隐藏这行代码dom不会更新：{{arr}}
+    <!-- {{activeClass}} -->
+  </div>
+
+  <script>
+    let num = 0
+    const app = {
+      data() {
+        return {
+          flexBoxs: [
+            {
+              id: "flex-direction",
+              default: "row",
+              values: ["row", "row-reverse", "column", "column-reverse"],
+            },
+            /* {
+              id: "flex-wrap",
+              default: "nowrap",
+              values: ["nowrap", "wrap", "wrap-reverse"],
+            },
+            {
+              id: "justify-content",
+              default: "flex-start",
+              values: [
+                "flex-start",
+                "flex-end",
+                "center",
+                "space-between",
+                "space-around",
+              ],
+            },
+            {
+              id: "align-items",
+              default: "flex-start",
+              values: [
+                "flex-start",
+                "flex-end",
+                "center",
+                "baseline",
+                "stretch",
+              ],
+            },
+            {
+              id: "align-content",
+              default: "flex-start",
+              values: [
+                "flex-start",
+                "flex-end",
+                "center",
+                "space-between",
+                "space-around",
+                "stretch",
+              ],
+            }, */
+          ],
+          arr: []
+        }
+      },
+      computed: {
+        activeClass() {
+          let obj = {};
+          this.flexBoxs.forEach( ( attr ) => {
+            obj[attr.id] = `${attr.default}`;
+          } );
+          num++
+          console.log(`computed第${num}次渲染`)
+          console.log(obj)
+          return obj;
+        },
+      },
+      updated(){
+        console.log('updated')
+      },
+      methods: {
+        changeClass( item, attr ) {
+          this.activeClass[item.id] = attr
+          console.log( this.activeClass )
+          this.arr.push( 1 )
+        }
+      }
+    }
+
+    Vue.createApp( app ).mount( '#app' )
+  </script>
+</body>
+
+</html>
